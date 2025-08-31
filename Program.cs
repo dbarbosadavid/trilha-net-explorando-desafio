@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Reflection.Metadata.Ecma335;
+using System.Text;
 using DesafioProjetoHospedagem.Models;
 
 Console.OutputEncoding = Encoding.UTF8;
@@ -20,6 +21,8 @@ Reserva reserva = new Reserva(diasReservados: 5);
 reserva.CadastrarSuite(suite);
 reserva.CadastrarHospedes(hospedes);
 
-// Exibe a quantidade de hóspedes e o valor da diária
+// Exibe a quantidade de hóspedes e o valor da reserva
 Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
 Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria()}");
+
+// Menu interativo
